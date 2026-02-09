@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Turing Machine</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Turing Machine</h1>
+
+      <div id="tape-wrapper">
+        <div id="tape"></div>
+      </div>
+
+      <div class="controls">
+        <div class="config-row">
+          <div class="config-item">
+            <label>Input</label>
+            <input type="text" id="inputString" value="1011" />
+          </div>
+          <div class="config-item">
+            <label>Speed: <span id="speed-val">5</span></label>
+            <div class="speed-box">
+              <input
+                type="range"
+                id="speed"
+                min="1"
+                max="10"
+                step="1"
+                value="5"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <label
+            >Quintuples (current state, read, next state, write, move)</label
+          >
+          <textarea id="code" rows="4">
+0, 1, 0, 0, R
+0, 0, 0, 1, R
+0, _, halt, _, N</textarea
+          >
+        </div>
+
+        <div class="buttons">
+          <button id="btnInit" class="btn btn-primary">Initialize</button>
+          <button id="btnStep" class="btn btn-primary" disabled>Step</button>
+          <button id="btnToggle" class="btn btn-accent" disabled>Run</button>
+        </div>
+      </div>
+
+      <div id="status">Waiting to start...</div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
