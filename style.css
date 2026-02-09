@@ -66,10 +66,10 @@ h1 {
   align-items: center;
   justify-content: center;
   font-family: "Fira Code", monospace;
-  font-size: 1rem;
+  font-size: 1.1rem;
   background: rgba(255, 255, 255, 0.03);
   border-radius: 12px;
-  margin: 0 6px;
+  margin: 0 4px;
   transition: all 0.3s ease;
 }
 
