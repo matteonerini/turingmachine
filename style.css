@@ -59,14 +59,14 @@ h1 {
 }
 
 .cell {
-  width: 60px;
-  height: 60px;
+  width: 40px;
+  height: 40px;
   border: 1px solid rgba(255, 255, 255, 0.1);
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: "Fira Code", monospace;
-  font-size: 1.4rem;
+  font-size: 1rem;
   background: rgba(255, 255, 255, 0.03);
   border-radius: 12px;
   margin: 0 6px;
